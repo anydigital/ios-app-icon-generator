@@ -1,0 +1,31 @@
+{
+  "name": "@anydigital/ios-app-icon-generator",
+  "version": "0.0.1-dev",
+  "description": "Generate iOS app icons from a source image for Xcode asset catalogs",
+  "bin": {
+    "gen-ios-app-icons": "./bin/gen-ios-app-icons.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ios",
+    "xcode",
+    "app-icon",
+    "icon-generator",
+    "appiconset",
+    "react-native"
+  ],
+  "author": "Anton Staroverov",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "os": [
+    "darwin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
