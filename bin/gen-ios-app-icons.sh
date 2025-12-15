@@ -40,7 +40,7 @@ if [ ! -f "$CONTENTS" ]; then
   exit 1
 fi
 
-python3 - <<'PY'
+python3 - <<PY
 import json, subprocess, math
 f = 'Contents.json'
 data = json.load(open(f))
