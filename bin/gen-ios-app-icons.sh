@@ -17,8 +17,7 @@ if ! command -v sips >/dev/null 2>&1; then
   echo "sips is required (macOS). Install ImageMagick or use Xcode to add icons." >&2; exit 1
 fi
 
-FOLDER_NAME=$(basename "$PWD")
-SOURCE_IMAGE="../${FOLDER_NAME%.*}.png"
+SOURCE_IMAGE="../${CURRENT_FOLDER%.*}.png"
 
 if [ ! -f "$SOURCE_IMAGE" ]; then
   echo "Creating placeholder $SOURCE_IMAGE"
