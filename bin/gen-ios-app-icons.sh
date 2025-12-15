@@ -3,6 +3,13 @@ set -euo pipefail
 # generate icons for every entry in Contents.json
 # usage: run from this folder: sh generate_icons.sh
 
+CURRENT_FOLDER=$(basename "$PWD")
+if [[ ! "$CURRENT_FOLDER" == *.appiconset ]]; then
+  echo "Error: This script must be run from within a *.appiconset folder" >&2
+  echo "Current folder: $CURRENT_FOLDER" >&2
+  exit 1
+fi
+
 if ! command -v python3 >/dev/null 2>&1; then
   echo "python3 is required" >&2; exit 1
 fi
